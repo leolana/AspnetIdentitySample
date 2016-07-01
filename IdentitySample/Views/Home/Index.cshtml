@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Página inicial";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET Identity é lindo.</h1>
+    <p class="lead">ASP.NET Identity é o novo componente de membership que sempre quisermos ter sem precisar fazer.</p>
+    <p><a href="http://www.codifica208.com.br/blog/" target="_blank" class="btn btn-primary btn-large">Aprenda mais &raquo;</a></p>
+</div>
+
+@{
+
+    if (TempData["AvisoEmail"] != null)
+    {
+        <h4 class="text-danger">@TempData["AvisoEmail"]</h4>
+    }
+}
